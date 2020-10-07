@@ -18,7 +18,7 @@ public class Controller {
 	private ServicoRepository repository;
 
 	@GetMapping("/servicos")
-	public List<ServicoModel> pegarTodos(@PathVariable String nome) {
+	public List<ServicoModel> pegarTodos() {
 		return repository.findAll();
 	}
 	
